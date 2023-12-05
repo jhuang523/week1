@@ -86,9 +86,10 @@ class Vector:
     
     @staticmethod
     def scalar_mult (v, s):
+        ls = []
         for i in range(len(v.vector)):
-            v.vector[i] *= s
-        return v
+            ls.append(v.vector[i] * s)
+        return Vector(ls)
 
 #testing 
 v1 = Vector([1,2,5])
